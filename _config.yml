@@ -1,14 +1,10 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+encoding: utf-8
+title: Coding Tips
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://codingtips.kanishkkunal.in" # the base hostname & protocol for your site
+twitter_username: kanishkkunal
+github_username:  kanishkkunal
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: 
@@ -16,7 +12,7 @@ google_analytics:
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 
 # Set the Sass partials directory, as we're using @imports
 sass:
