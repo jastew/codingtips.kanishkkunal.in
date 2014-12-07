@@ -1,16 +1,4 @@
 /**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/**
  * Basic styling
  */
 body {
@@ -32,7 +20,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -42,6 +30,7 @@ ul, ol, dl, figure,
  */
 img {
     max-width: 100%;
+    height: auto;
     vertical-align: middle;
 }
 
@@ -82,9 +71,57 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: $heading-color;
+    line-height: 1.2
 }
 
 
+h1 {
+    font-size: 42px;
+
+    @include media-query($on-palm) {    
+        font-size: 26px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+
+    @include media-query($on-palm) {
+        font-size: 22px;
+    }
+}
+
+h3 {
+    font-size: 26px;
+
+    @include media-query($on-palm) {
+        font-size: 20px;
+    }
+}
+
+h4 {
+    font-size: 20px;
+
+    @include media-query($on-palm) {
+        font-size: 18px;
+    }
+}
+
+h5 {
+    font-size: 18px;
+
+    @include media-query($on-palm) {
+        font-size: 17px;
+    }
+}
+
+h6 {
+    font-size: 16px;
+
+    @include media-query($on-palm) {
+        font-size: 16px;
+    }
+}
 
 /**
  * Links
@@ -98,8 +135,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: lighten($brand-color, 15%);
     }
 }
 
@@ -154,8 +190,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: $content-width;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -163,8 +198,6 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
@@ -190,15 +223,17 @@ pre {
  * Icons
  */
 .icon {
+    text-decoration: none;
+    margin-right: 6px;
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 22px;
+        height: 22px;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: darken($light-color, 10%);
         }
     }
 }

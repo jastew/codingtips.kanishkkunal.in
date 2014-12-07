@@ -22,8 +22,10 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$light-color:       #ecf0f1;
+
 // Width of the content area
-$content-width:    768px;
+$content-width:    1088px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -47,6 +49,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "reset",
         "base",
         "layout",
         "syntax-highlighting"
