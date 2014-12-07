@@ -81,6 +81,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+    color: $heading-color;
 }
 
 
@@ -129,8 +130,7 @@ pre,
 code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    background-color: $grey-color-dark;
 }
 
 code {
