@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Firefox launches Developer Edition Browser for Web Developers
-date: 2014-11-12 17:59
-author: kanishkkunal
-comments: true
-categories: [Developer Tools]
+categories: developer-tools
 ---
 <a href="https://www.mozilla.org/en-US/firefox/developer/" target="_blank"><img class="aligncenter size-full wp-image-25" src="http://codingtips.kanishkkunal.in/wp-content/uploads/sites/11/2014/11/firefox-developer-edition-browser-screenshot.jpg" alt="firefpx developer edition browser screenshot" width="832" height="456" /></a>
 

@@ -4,19 +4,39 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    <h1 class="page-heading">Posts by Topics</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    {% capture tags %}
+    {% for tag in site.categories %}
+        {{ tag[0] | slugify }}
     {% endfor %}
-  </ul>
+    {% endcapture %}
+    {% assign sortedtags = tags | split:' ' | sort %}
+
+    {% for tag in sortedtags %}
+      <h3 class="post-topic">{{ tag | replace:'-', ' ' }}</h3>
+      <ul class="post-list">
+      {% for post in site.categories[tag] %}
+        <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+
+    {% capture tags %}
+    {% for tag in site.tags %}
+        {{ tag[0] | slugify }}
+    {% endfor %}
+    {% endcapture %}
+    {% assign sortedtags = tags | split:' ' | sort %}
+
+    {% for tag in sortedtags %}
+      <h3 class="post-topic">{{ tag | replace:'-', ' ' }}</h3>
+      <ul class="post-list">
+      {% for post in site.tags[tag] %}
+        <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

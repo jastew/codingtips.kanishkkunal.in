@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Ghost Buttons on background image
-date: 2014-11-18 19:16
-author: kanishk
-comments: true
-categories: [CSS Buttons, Flat Web Design, Ghost Buttons, HTML &amp; CSS]
+categories: html-css
+tags: [css-buttons, flat-web-design, ghost-buttons]
 ---
 This is my second post in <a href="/tag/ghost-buttons/">Ghost Buttons</a> series where we will talk about placing Ghost Buttons over background images.
 

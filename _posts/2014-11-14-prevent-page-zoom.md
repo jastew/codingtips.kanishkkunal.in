@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Prevent page zoom by user in Mobile Browser
-date: 2014-11-14 19:44
-author: kanishk
-comments: true
-categories: [HTML &amp; CSS, Web Apps]
+categories: html-css
+tags: web-apps
 ---
 Many websites and web apps prevent page zoom by user in mobile browsers such as Safari on iOS. If you are wondering how this is done then you will be amazed to know that it is possible without any JavaScript. All you need is to add a simple META tag to the head section of your webpage.
 

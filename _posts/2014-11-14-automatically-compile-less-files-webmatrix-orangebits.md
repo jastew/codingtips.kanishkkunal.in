@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Automatically compile LESS files in WebMatrix with OrangeBits
-date: 2014-11-14 02:38
-author: kanishk
-comments: true
-categories: [Developer Tools, LESS, WebMatrix]
+categories: developer-tools
+tags: [less, webmatrix]
 ---
 <img class="aligncenter size-full wp-image-42" src="http://codingtips.kanishkkunal.in/wp-content/uploads/sites/11/2014/11/compile-less-in-webmatrix.png" alt="compile less in webmatrix" width="943" height="300" />
 

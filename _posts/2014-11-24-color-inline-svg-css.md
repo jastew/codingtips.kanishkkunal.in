@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Change color of inline SVG with CSS
-date: 2014-11-24 20:35
-author: kanishk
-comments: true
-categories: [font icon, HTML &amp; CSS, svg]
+categories: html-css
+tags: [font-icon, svg]
 ---
 <img class="aligncenter size-full wp-image-98" src="http://codingtips.kanishkkunal.in/wp-content/uploads/sites/11/2014/11/inline-svg-color.png" alt="inline svg color" width="700" height="243" />
 

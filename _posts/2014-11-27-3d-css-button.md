@@ -1,10 +1,8 @@
 ---
 layout: post
 title: How to create a 3D CSS Button
-date: 2014-11-27 18:14
-author: kanishk
-comments: true
-categories: [CSS Buttons, HTML &amp; CSS]
+categories: html-css
+tags: css-buttons
 ---
 [caption id="attachment_127" align="aligncenter" width="700"]<a href="http://codepen.io/kanishkkunal/full/KwpGNa/" target="_blank"><img class="wp-image-127 size-full" title="3D CSS Buttons" src="http://codingtips.kanishkkunal.in/wp-content/uploads/sites/11/2014/11/3d-css-buttons.png" alt="3d css buttons" width="700" height="320" /></a> Click on image for full screen demo of 3D CSS Buttons[/caption]
 

@@ -16,7 +16,8 @@ $spacing-unit:     32px;
 $text-color:       #515151;
 $heading-color:    #313131;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #2980b9;
+$brand-color-soft: #3498db;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -51,6 +52,7 @@ $on-laptop:        900px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "reset",
+        "mixins",
         "base",
         "layout",
         "syntax-highlighting"

@@ -129,13 +129,14 @@ h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    @include transition(color .3s ease);
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color;
     }
 
     &:hover {
-        color: lighten($brand-color, 15%);
+        color: $brand-color-soft;
     }
 }
 
