@@ -112,6 +112,26 @@
     }
 }
 
+.sidebar-ad {
+    margin-bottom: $spacing-unit;
+}
+
+.sidebar-title {
+    font-size: $small-font-size;
+    color: $grey-color;
+    padding-bottom: $spacing-unit / 3;
+}
+
+.searchform {
+    display: block;
+    width: 100%;
+    margin-bottom: $spacing-unit;
+
+    input {
+        padding:6px 15px;
+    }
+}
+
 
 /**
  * Posts
