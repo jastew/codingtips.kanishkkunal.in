@@ -74,6 +74,43 @@
     font-size: 24px;
 }
 
+/* Sidebar Layout */
+.page-content-sidebar {
+    padding: $spacing-unit 0;
+
+    .wrapper {
+        position: relative;
+    }
+
+    .content-wrapper {
+      float: left;
+      width: 100%;
+    }
+
+    .content-inner {
+      margin-right: $sidebar-width + (2 * $spacing-unit);
+      clear: both;
+      overflow: auto;
+      
+        @include media-query($on-laptop) {
+            margin-right: 0;
+        }
+    }
+
+    .sidebar {
+      position: relative;
+      width: $sidebar-width + (2 * $spacing-unit);
+      margin-left: -1 *( $sidebar-width + (2 * $spacing-unit) );
+      float: right;
+      overflow: hidden;
+      min-height: 300px;
+      padding-left: 2 * $spacing-unit;
+
+        @include media-query($on-laptop) {
+            display: none;
+        }
+    }
+}
 
 
 /**
