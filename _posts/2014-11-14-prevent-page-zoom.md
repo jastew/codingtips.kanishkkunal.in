@@ -6,18 +6,18 @@ tags: web-apps
 ---
 Many websites and web apps prevent page zoom by user in mobile browsers such as Safari on iOS. If you are wondering how this is done then you will be amazed to know that it is possible without any JavaScript. All you need is to add a simple META tag to the head section of your webpage.
 
-<img class="aligncenter wp-image-59 size-full" src="http://codingtips.kanishkkunal.in/wp-content/uploads/sites/11/2014/11/prevent-page-zoom-mobile.jpg" alt="prevent page zoom on mobile browser" width="826" height="367" />
+{% include image.html img="wp-content/uploads/sites/11/2014/11/prevent-page-zoom-mobile.jpg" title="prevent page zoom on mobile browser" %}
 
 Preventing user scaling in this manner allows your web-app layout to feel more native as now users can't zoom in and zoom out on double taps or by using pinch and stretch gestures.
 <h2>META tag to prevent page zoom</h2>
 Add the following META tag in &lt;head&gt; section of your HTML.
 
-[code language="html"]
+{% highlight html linenos %}
 
-&lt;meta name=&quot;viewport&quot;
-      content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-[/code]
+{% endhighlight %}
 
 If you use this meta tag, it will prevent the user from scaling and will also prevent scaling due to input focus or due to device orientation changes.
 

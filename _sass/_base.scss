@@ -18,11 +18,16 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, .embed,
 %vertical-rhythm {
     margin-bottom: $spacing-unit;
 }
 
+.embed {
+    iframe {
+        width: 100%;
+    }
+}
 
 
 /**
@@ -34,7 +39,7 @@ img {
     vertical-align: middle;
 }
 
-img.aligncenter {
+.aligncenter {
     margin: $spacing-unit auto;
     clear: both;
     display: block;
@@ -45,6 +50,8 @@ img.aligncenter {
 }
 
 .image-wrapper {
+    @extend %vertical-rhythm;
+
     .image-caption {
         text-align: center;
         color: $grey-color;
@@ -195,7 +202,6 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
 
     > code {
         border: 0;
@@ -243,7 +249,6 @@ pre {
 
 /* Ghost button styling */
 .ghost-button {
-     background: #fff;
      border: 1px solid $brand-color;
      border-radius: 5px;
      padding: 7px 12px;
