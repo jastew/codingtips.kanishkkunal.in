@@ -19,7 +19,14 @@
     &,
     &:hover,
     &:visited {
-        color: $light-color;
+        color: $brand-color;
+    }
+}
+
+#header-brand {
+    @include media-query($on-palm) {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
@@ -30,8 +37,21 @@
     top: 10px;
     right: $spacing-unit;
 
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
+        max-height: 60px;
+        max-width: 468px;
+        top: 25px;
+        right: $spacing-unit / 2;
+    }
 
+    @include media-query($on-palm) {
+        max-height: 60px;
+        max-width: 468px;
+        position: relative;
+        display: block;
+        top: 0;
+        right: 0;
+        margin: $spacing-unit / 2 auto;
     }
 }
 
@@ -66,7 +86,7 @@
 }
 
 .post-topic {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
     color: $grey-color;
     text-transform: uppercase;
     margin-bottom: $spacing-unit / 3;
@@ -79,7 +99,7 @@
 
 .post-link {
     display: block;
-    font-size: 20px;
+    font-size: 1.1 * $base-font-size;
     font-weight: 700;
 }
 
