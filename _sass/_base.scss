@@ -34,7 +34,23 @@ img {
     vertical-align: middle;
 }
 
+img.aligncenter {
+    margin: $spacing-unit auto;
+    clear: both;
+    display: block;
+}
 
+.text-center {
+    text-align: center;
+}
+
+.image-wrapper {
+    .image-caption {
+        text-align: center;
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
+}
 
 /**
  * Figures
@@ -54,6 +70,7 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    padding-left: 0;
 }
 
 li {
@@ -137,9 +154,9 @@ a {
 
     &:hover {
         color: $brand-color-soft;
+        text-decoration: none;
     }
 }
-
 
 
 /**
@@ -165,9 +182,11 @@ blockquote {
  */
 pre,
 code {
+    font-family: Consolas,"Courier New",monospace;
     font-size: 15px;
     border: 1px solid $grey-color-light;
-    background-color: $grey-color-dark;
+    border-radius: 3px;
+    background-color: #fafafa;
 }
 
 code {
@@ -184,8 +203,6 @@ pre {
         padding-left: 0;
     }
 }
-
-
 
 /**
  * Wrapper
@@ -219,7 +236,57 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: darken($light-color, 10%);
+            fill: $grey-color;
         }
+    }
+}
+
+/* Ghost button styling */
+.ghost-button {
+     background: #fff;
+     border: 1px solid $brand-color;
+     border-radius: 5px;
+     padding: 7px 12px;
+     font-weight: 400;
+     margin-right: $spacing-unit / 2;
+     text-decoration: none;
+     -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.ghost-button:hover, .ghost-button:active {
+  color:#fff;
+  border: 1px solid $brand-color-soft;
+  background:$brand-color-soft;
+}
+
+.ghost-button-group {
+    display: table;
+    margin-bottom: $spacing-unit;
+
+    .ghost-button {
+        display: table-cell;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .ghost-button:first-child {
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .ghost-button:last-child {
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .active {
+      color:#fff;
+      border: 1px solid $brand-color-soft;
+      background:$brand-color-soft;
     }
 }
