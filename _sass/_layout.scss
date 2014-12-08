@@ -182,6 +182,7 @@
 .sidebar-title {
     font-size: $small-font-size;
     color: $grey-color;
+    text-transform: uppercase;
     padding-bottom: $spacing-unit / 3;
 }
 
@@ -191,7 +192,8 @@
     margin-bottom: $spacing-unit;
 
     input {
-        padding:6px 15px;
+        padding:6px 12px;
+        width: 100%;
     }
 }
 
