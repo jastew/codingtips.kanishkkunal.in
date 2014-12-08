@@ -1,1 +1,15 @@
-<img class="sidebar-ad" src="http://placehold.it/300x600">
+{% if site.ads2 %}
+<div class="embed">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- SDR-Skyscraper -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:600px"
+         data-ad-client="ca-pub-2882870425816773"
+         data-ad-slot="4532796534"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+{% else %}
+<img class="sidebar-ad" src="http://placehold.it/300x600"/>
+{% endif %}

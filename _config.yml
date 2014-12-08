@@ -14,8 +14,15 @@ github_username:  kanishkkunal
 feeds: http://feeds.feedburner.com/supercodingtips
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-37350394-9
 
+# disqus shortname
+disqus: supercodingtips
+
+# enable ads
+ads1: yes
+ads2: yes
+ads3: yes
 
 # Build settings
 markdown: kramdown
@@ -37,4 +44,5 @@ exclude:
     - Gemfile.lock
     - README.md
     - LICENSE
+    - _config_dev.yml
 
