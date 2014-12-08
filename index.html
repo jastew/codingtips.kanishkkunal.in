@@ -10,7 +10,7 @@ description: Code snippets & tutorials on Mobile App Development, Web Developmen
     
   {% for post in site.posts %}
     <article class="post">   
-      <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a class="post-link" rel="bookmark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="post-meta">
             {% for category in post.categories %}
                 <span class="meta-category"><a href="/category/{{ category | slugify }}/">{{ category | replace:'-', ' '}}</a></span>

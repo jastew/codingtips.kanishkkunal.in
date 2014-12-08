@@ -3,14 +3,19 @@ layout: default-sidebar
 ---
 <div class="post">
 
-    <article class="post-content">
+    <article class="post-content" itemscope itemtype="http://schema.org/Article">
       <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title entry-title" itemprop="name">{{ page.title }}</h1>
         <div class="post-meta">
             {% for category in page.categories %}
                 <span class="meta-category"><a href="/category/{{ category | slugify }}/">{{ category | replace:'-', ' ' }}</a></span>
             {% endfor %}
-            <time class="date updated">{{ page.date | date: "%b %-d, %Y" }}</time>
+            {% if page.modified %}
+                Updated on: <time class="date updated" datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%b %-d, %Y" }}</time>
+            {% else %}
+                <time class="date published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+            {% endif %}
+            by <span itemprop="author">{{ site.name }}</span>
         </div>
       </header>
       <div class="entry-content">
@@ -26,7 +31,7 @@ layout: default-sidebar
     <div class="post-meta">
         Tags  
         {% for tag in page.tags %}
-            <span class="meta-tag"><a href="/tag/{{ tag | slugify }}/">{{ tag | replace:'-', ' ' }}</a></span>
+            <span class="meta-tag"><a rel="tag" href="/tag/{{ tag | slugify }}/">{{ tag | replace:'-', ' ' }}</a></span>
         {% endfor %}
     </div>
     {% endif %}

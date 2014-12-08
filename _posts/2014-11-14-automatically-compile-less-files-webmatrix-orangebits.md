@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Automatically compile LESS files in WebMatrix with OrangeBits
+description: As Windows is my primary development machine, I use Microsoft’s WebMatrix (free tool) to do all my web development work. I have to frequently deal with CSS, JavaScript, HTML and PHP files and I find WebMatrix to be excellent IDE
 categories: developer-tools
 tags: [less, webmatrix]
 ---

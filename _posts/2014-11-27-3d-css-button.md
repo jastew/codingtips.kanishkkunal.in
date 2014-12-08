@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to create a 3D CSS Button
+description: In this article, we will see how to create 3D CSS buttons with downward push effects and flat ui colors, optimized for responsive web.
 categories: html-css
 tags: css-buttons
 ---
