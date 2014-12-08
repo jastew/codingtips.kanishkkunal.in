@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Responsive Table with alternate color rows
+date: 2014-12-07 11:28
 categories: html-css
 tags: responsive-web-design
 ---
