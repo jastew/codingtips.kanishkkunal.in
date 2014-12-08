@@ -245,6 +245,12 @@ pre {
             fill: $grey-color;
         }
     }
+
+    > svg:hover {
+        path {
+            fill: $light-color;
+        }
+    }
 }
 
 /* Ghost button styling */
