@@ -86,14 +86,11 @@
 }
 
 .post-topic {
-    font-size: $base-font-size;
     text-transform: uppercase;
+    margin-top: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 3;
 
-    background-color: $grey-color-dark;
-    color: $light-color;
-    padding: 8px 12px;
-    border-radius: 5px;
+    color: $text-color;
     display:inline-block;
 }
 
@@ -130,7 +127,14 @@
 #home-topics {
     .post-link {
         font-size: 1.2 * $base-font-size;
-        padding-left: 12px;
+    }
+}
+
+.rss-subscribe a {
+    color: $grey-color;
+
+    svg {
+        fill: lighten($grey-color, 6%);
     }
 }
 

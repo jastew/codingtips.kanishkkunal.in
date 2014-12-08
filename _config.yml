@@ -10,6 +10,9 @@ url: "http://codingtips.kanishkkunal.in" # the base hostname & protocol for your
 twitter_username: kanishkkunal
 github_username:  kanishkkunal
 
+#feeds url
+feeds: http://feeds.feedburner.com/supercodingtips
+
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: 
 
