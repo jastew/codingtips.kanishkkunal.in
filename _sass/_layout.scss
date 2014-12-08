@@ -3,7 +3,8 @@
  */
 .site-header {
     background-color: #333333;
-    min-height: 110px;
+    border-top: 5px solid $secondary-color;
+    min-height: 115px;
 
     .wrapper {
         position: relative;
@@ -12,6 +13,10 @@
             padding-left: 0;
             padding-right: 0;
          }
+    }
+
+    &:before {
+
     }
 }
 
