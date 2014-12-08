@@ -3,18 +3,19 @@ layout: default-sidebar
 ---
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-meta">
-        {% for category in page.categories %}
-            <span class="meta-category"><a href="/category/{{ category | slugify }}/">{{ category | replace:'-', ' ' }}</a></span>
-        {% endfor %}
-        <span>{{ page.date | date: "%b %-d, %Y" }}</span>
-    </div>
-  </header>
-
     <article class="post-content">
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            {% for category in page.categories %}
+                <span class="meta-category"><a href="/category/{{ category | slugify }}/">{{ category | replace:'-', ' ' }}</a></span>
+            {% endfor %}
+            <time class="date updated">{{ page.date | date: "%b %-d, %Y" }}</time>
+        </div>
+      </header>
+      <div class="entry-content">
         {{ content }}
+      </div>
     </article>
 
     <div class="embed text-center">
