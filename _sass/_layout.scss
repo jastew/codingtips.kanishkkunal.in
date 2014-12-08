@@ -199,6 +199,9 @@
 
     input {
         padding:6px 12px;
+        border: none;
+        background-color: $grey-color-light;
+        border-radius: 5px;
         width: 100%;
     }
 }
@@ -270,5 +273,46 @@
 
     .ghost-button-group {
         margin-left: 12px;
+    }
+}
+
+/* Subscribe box */
+#subscribe-box {
+    border:1px solid $grey-color-light;
+    padding: 20px;
+    padding-top: 14px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+
+    p {
+        color: $grey-color;
+        margin-bottom: 8px;
+    }
+
+    input {
+        padding:3px 6px;
+        width: 100%;
+        border:none;
+        line-height: 1;
+        font-size: 14px;
+        height: 28px;
+    }
+
+    input[type="text"] {
+        background-color: $grey-color-light;
+        color: $grey-color;
+        border-radius: 5px 0 0 5px;
+    }
+
+    input[type="submit"] {
+        background: $brand-color;
+        color: $light-color;
+        border-radius: 0 5px 5px 0;
+        @include transition(background-color .3s ease);
+    }
+
+    input[type="submit"]:hover {
+        background: $brand-color-soft;
     }
 }

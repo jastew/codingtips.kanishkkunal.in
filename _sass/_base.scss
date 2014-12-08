@@ -249,6 +249,7 @@ pre {
 
 /* Ghost button styling */
 .ghost-button {
+    display: inline-block;
      border: 1px solid $brand-color;
      border-radius: 5px;
      padding: 7px 12px;
