@@ -1,49 +1,26 @@
 ---
-layout: default
+layout: default-sidebar
 ---
 
-<div class="home">
 
-    <h2 class="home-page-heading">Articles by Topics</h2>
-    <div class="grid">
-        <div class="grid-col grid-col-half">
-            {% capture tags %}
-            {% for tag in site.tags %}
-                {{ tag[0] | slugify }}
+<div id="home-index" class="home">
+
+  <p class="home-page-heading">Articles by<span class="ghost-button-group"><a class="ghost-button ghost-button-small active" href="/">Date</a><a class="ghost-button ghost-button-small" href="/topics/">Topic</a></span></p>
+    
+  {% for post in site.posts %}
+    <article class="post">   
+      <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="post-meta">
+            {% for category in post.categories %}
+                <span class="meta-category"><a href="/category/{{ category | slugify }}/">{{ category | replace:'-', ' '}}</a></span>
             {% endfor %}
-            {% endcapture %}
-            {% assign sortedtags = tags | split:' ' | sort %}
-
-            {% for tag in sortedtags %}
-                <h3 class="post-topic">{{ tag | replace:'-', ' ' }}</h3>
-                <ul class="post-list">
-                {% for post in site.tags[tag] %}
-                <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                {% endfor %}
-                </ul>
-            {% endfor %}
-        </div>
-        <div class="grid-col grid-col-half">
-            {% capture tags %}
-            {% for tag in site.categories %}
-                {{ tag[0] | slugify }}
-            {% endfor %}
-            {% endcapture %}
-            {% assign sortedtags = tags | split:' ' | sort %}
-
-            {% for tag in sortedtags %}
-                <h3 class="post-topic">{{ tag | replace:'-', ' ' }}</h3>
-                <ul class="post-list">
-                {% for post in site.categories[tag] %}
-                <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                {% endfor %}
-                </ul>
-            {% endfor %}
-
-            {% include sidebar-ad.html %}
-        </div>
-    </div>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+            <span>{{ post.date | date: "%B %e, %Y" }}</span>
+      </div>
+      <div class="post-summary">
+        <p>{{ post.content | strip_html | truncatewords:40}}</p>
+      </div>
+    </article>
+  {% endfor %}
+    
+  <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% include svg-icons/rss.html %} Subscribe via RSS</a></p>
 </div>

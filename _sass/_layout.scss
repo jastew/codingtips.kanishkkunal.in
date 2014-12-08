@@ -87,20 +87,51 @@
 
 .post-topic {
     font-size: $base-font-size;
-    color: $grey-color;
     text-transform: uppercase;
     margin-bottom: $spacing-unit / 3;
+
+    background-color: $grey-color-dark;
+    color: $light-color;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display:inline-block;
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    @extend %vertical-rhythm;
 }
 
 .post-link {
     display: block;
-    font-size: 1.1 * $base-font-size;
     font-weight: 700;
+}
+
+#home-index {
+    article {
+        margin-top: $spacing-unit  * 1.5;
+        margin-bottom: $spacing-unit  * 1.5;
+    }
+
+    h2 {
+        margin-bottom: $spacing-unit / 1.8;
+    }
+
+    .post-link {
+        font-weight: 700;
+    }
+
+    .post-summary {
+        color: $grey-color;
+    }
+}
+
+#home-topics {
+    .post-link {
+        font-size: 1.2 * $base-font-size;
+        padding-left: 12px;
+    }
 }
 
 /* Sidebar Layout */
@@ -199,7 +230,7 @@
     background-color: $grey-color-dark;
     color: $light-color;
     padding: 5px 12px;
-    border-radius: 5px;
+    border-radius: 4px;
     margin-left: 6px;
     text-transform: uppercase;
     @include transition(background-color .3s ease);
@@ -212,13 +243,21 @@
 .meta-category a {
     background-color: $secondary-color;
     color: $light-color;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 5px 12px;
+    border-radius: 4px;
     margin-right: 6px;
     text-transform: uppercase;
     @include transition(background-color .3s ease);
 
     &:hover {
         background-color: $secondary-color-soft;
+    }
+}
+
+.home-page-heading {
+    padding-top: 6px;
+
+    .ghost-button-group {
+        margin-left: 12px;
     }
 }
