@@ -30,6 +30,7 @@ paginate: 8
 # Build settings
 markdown: kramdown
 permalink: /:title/
+lsi: true
 
 # Set the Sass partials directory, as we're using @imports
 sass:

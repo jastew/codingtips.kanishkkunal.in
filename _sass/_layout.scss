@@ -352,3 +352,33 @@
         background: $brand-color-soft;
     }
 }
+
+/* Related posts */
+.related-posts {
+    @extend %vertical-rhythm;
+
+    .related-posts-heading {
+        font-weight: 700;
+        font-size: 1.3 * $base-font-size;
+        margin-bottom: $spacing-unit / 3;
+        color: $grey-color;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    li {
+        padding-bottom: 6px;
+        font-size: 1.1 * $base-font-size;
+    }
+
+    .related-category {
+        text-transform: uppercase;
+        color: $grey-color;
+        font-size: $small-font-size;
+        padding-left: 10px;
+    }
+
+}
