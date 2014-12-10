@@ -24,6 +24,9 @@ ads1: yes
 ads2: yes
 ads3: yes
 
+# paging settings
+paginate: 10
+
 # Build settings
 markdown: kramdown
 permalink: /:title/

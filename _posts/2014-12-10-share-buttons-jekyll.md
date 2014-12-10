@@ -17,7 +17,7 @@ In order to add share buttons to my posts, I used the share URLs of the social n
 
 I created a partial HTML file in `_includes` folder called _ `share-page.html`  which I added at the end of the post or page layouts after content. Find below the contents of this file. Notice the use of [liquid tags](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) such as {% raw %}`{{ page.title }}` and `{{ page.url }}` {% endraw %} to automatically fetch the title and URL of the  current post or page.
 
-{% highlight html linenos %}
+{% highlight html %}
 {% raw %}
 <div class="share-page">
     Share this on &rarr; 
@@ -36,7 +36,7 @@ You can find these share buttons at the bottom of this post.  Just for the sake 
 
 Next I added a bit of styling with CSS. I am giving my SCSS snippet below just in case you may want to style it in similar manner.
 
-{% highlight scss linenoes %}
+{% highlight scss %}
 .share-page {
     text-align: center;
     background: $secondary-color;

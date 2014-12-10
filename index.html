@@ -7,9 +7,10 @@ description: Code snippets & tutorials on Mobile App Development, Web Developmen
 <div id="home-index" class="home">
 
   <p class="home-page-heading">Articles by<span class="ghost-button-group"><a class="ghost-button ghost-button-small active" href="/">Date</a><a class="ghost-button ghost-button-small" href="/topics/">Topic</a></span></p>
-    
-  {% for post in site.posts %}
-    <article class="post">   
+
+  <!-- This loops through the paginated posts -->
+  {% for post in paginator.posts %}
+  <article class="post">
       <h2><a class="post-link" rel="bookmark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="post-meta">
             {% for category in post.categories %}
@@ -22,6 +23,19 @@ description: Code snippets & tutorials on Mobile App Development, Web Developmen
       </div>
     </article>
   {% endfor %}
-    
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}/" class="ghost-button ghost-button-small previous">&larr; Prev</a>
+    {% else %}
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}/" class="ghost-button ghost-button-small next">Next &rarr;</a>
+    {% else %}
+    {% endif %}
+  </div>
+
   <p class="rss-subscribe"><a href="{{ site.feeds }}">{% include svg-icons/rss.html %} Subscribe via RSS</a></p>
 </div>
