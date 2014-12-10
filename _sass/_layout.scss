@@ -145,11 +145,24 @@
     }
 }
 
-.rss-subscribe a {
-    color: $grey-color;
+.rss-subscribe {
 
-    svg {
-        fill: lighten($grey-color, 6%);
+    .mail-subscribe {
+        float: right;
+
+        @include media-query($on-palm) {
+            float: none;
+            display: block;
+            padding-bottom: 6px;
+        }
+    }
+
+    a {
+        color: $grey-color;
+
+        svg {
+            fill: lighten($grey-color, 10%);
+        }
     }
 }
 
