@@ -47,6 +47,10 @@ layout: default-sidebar
         {% endif %}
         {% endfor %}
         </ul>
+        <p class="rss-subscribe">
+            <a href="{{ site.feeds }}" target="_blank" rel="nofollow">{% include svg-icons/rss.html %} Subscribe via RSS</a><br/>
+            <a href="https://feedburner.google.com/fb/a/mailverify?uri=supercodingtips&amp;loc=en_US" target="_blank" rel="nofollow">{% include svg-icons/mail.html %} Subscribe by Email</a>
+        </p>
     </div>
      {% include disqus.html %}
 </div>
