@@ -27,12 +27,12 @@ description: Code snippets & tutorials on Mobile App Development, Web Developmen
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}/" class="ghost-button ghost-button-small previous">&larr; Prev</a>
+      <a href="{{ paginator.previous_page_path | replace:'index.html','' }}" class="ghost-button ghost-button-small prev" rel="prev">« Prev</a>
     {% else %}
     {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}/" class="ghost-button ghost-button-small next">Next &rarr;</a>
+      <a href="{{ paginator.next_page_path | replace:'index.html','' }}" class="ghost-button ghost-button-small next" rel="next">Next »</a>
     {% else %}
     {% endif %}
   </div>

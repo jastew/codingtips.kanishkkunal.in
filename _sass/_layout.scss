@@ -32,7 +32,7 @@
         color: #b7b7b7;
     }
 
-    
+
     &:hover {
         color: $light-color;
     }
@@ -153,6 +153,32 @@
     }
 }
 
+/* Pagination */
+.pagination {
+    @extend %vertical-rhythm;
+    @extend %clearfix;
+    text-align: center;
+    position: relative;
+
+    .page_number {
+        font-weight: 700;
+        color: $grey-color;
+    }
+
+    .prev {
+        position: absolute;
+        left: 0;
+        top: -7px;
+    }
+
+    .next {
+        position: absolute;
+        right: 0;
+        top: -7px;
+    }
+
+}
+
 /* Sidebar Layout */
 .page-content-sidebar {
     padding: $spacing-unit 0;
@@ -170,7 +196,7 @@
       margin-right: $sidebar-width + (2 * $spacing-unit);
       clear: both;
       overflow: auto;
-      
+
         @include media-query($on-laptop) {
             margin-right: 0;
         }
