@@ -4,7 +4,7 @@ title: Ghost Buttons on background image
 categories: html-css
 tags: [css-buttons, flat-web-design, ghost-buttons]
 ---
-This is my second post in <a href="/tag/ghost-buttons/">Ghost Buttons</a> series where we will talk about placing Ghost Buttons over background images.
+This is my second post in **Ghost Buttons** series. In the last one I showed how to create a simple [Ghost Button CSS]({% post_url 2014-11-09-super-simple-ghost-button-css %}) style for turning Links into Ghost Buttons. In this post we will see a better example where we will be placing the Ghost Buttons over large background images and giving it a [soft color transition effect]({% post_url 2014-11-15-color-animation-link-hover-css %}).
 
 In Flat Web design, Ghost Buttons are generally placed over large background images or a video footage. For example take a look at <a href="http://transitions1020.com/" target="_blank">Nokia Transitions</a> website, which places a ghost button along with introduction text, over a scenic video of sea waves.
 
@@ -36,7 +36,7 @@ We will be using the same <a title="Super simple Ghost Button CSS" href="http://
 	<li>Upon hover, the ghost button will get filled with a translucent color background.</li>
 </ul>
 
-You can find the code along with the result with Ghost button displayed against a blurred background image in the following code pen. As we are making use of background image, please see the result in <a href="http://codepen.io/kanishkkunal/full/dPbZBg/" target="_blank">full page view</a>.
+You can find the full code along with the demo of Ghost button displayed against a blurred background image in the following code pen. As we are making use of background image, please see the result in <a href="http://codepen.io/kanishkkunal/full/dPbZBg/" target="_blank">full page view</a>.
 
 <div class="embed">
 <p class="codepen" data-height="268" data-theme-id="0" data-slug-hash="dPbZBg" data-default-tab="result" data-user="kanishkkunal">See the Pen <a href="http://codepen.io/kanishkkunal/pen/dPbZBg/">Ghost Buttons #2</a> by Kanishk Kunal (<a href="http://codepen.io/kanishkkunal">@kanishkkunal</a>) on <a href="http://codepen.io">CodePen</a>.</p>
