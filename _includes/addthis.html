@@ -1,0 +1,24 @@
+{% if site.addthis %}
+<script type="text/javascript">
+var addthis_share = {
+    url: "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+    title: "{{ page.title }}",
+     url_transforms : {
+          shorten: {
+               twitter: 'bitly'
+          }
+     },
+     shorteners : {
+          bitly : {}
+     },
+     passthrough : {
+        twitter: {
+            via: "{{ site.twitter_username }}",
+            related: "{{ site.twitter_username }}"
+        }
+    }
+}
+</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54917e2b57a4fbbd" async="async"></script>
+{% endif %}

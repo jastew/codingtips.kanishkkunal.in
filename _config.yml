@@ -24,6 +24,9 @@ ads1: yes
 ads2: yes
 ads3: yes
 
+# add this
+addthis: yes
+
 # paging settings
 paginate: 8
 
