@@ -51,4 +51,5 @@ exclude:
     - README.md
     - LICENSE
     - _config_dev.yml
+    - run.bat
 
