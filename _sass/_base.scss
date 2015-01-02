@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 42px;
 
-    @include media-query($on-palm) {    
+    @include media-query($on-palm) {
         font-size: 26px;
     }
 }
@@ -155,10 +155,6 @@ a {
     text-decoration: none;
     @include transition(color .3s ease);
 
-    &:visited {
-        color: $brand-color;
-    }
-
     &:hover {
         color: $brand-color-soft;
         text-decoration: none;
@@ -182,6 +178,14 @@ blockquote {
     }
 }
 
+/**
+ * Well
+ */.well {
+    background-color: #f2f2f2;
+    padding: $spacing-unit / 2;
+    border-radius: 3px;
+    margin-bottom: $spacing-unit;
+ }
 
 
 /**
@@ -253,28 +257,38 @@ pre {
     }
 }
 
-/* Ghost button styling */
-.ghost-button {
-    display: inline-block;
-     border: 1px solid $brand-color;
-     border-radius: 5px;
+/* Buttons styling */
+.ghost-button, .brand-button, .btn {
+     display: inline-block;
+     border-radius: 3px;
      padding: 7px 12px;
      font-weight: 400;
-     margin-right: $spacing-unit / 2;
      text-decoration: none;
-     -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
+     -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.ghost-button, .btn {
+     color: $brand-color;
+     border: 1px solid $brand-color;
+}
+
+.brand-button {
+    color:#fff;
+    border: 1px solid $brand-color;
+    background:$brand-color;
 }
 
 
- .ghost-button-small {
+ .ghost-button-small, .brand-button-small, .btn-sm {
         padding: 5px 12px;
+        font-size: 14px;
  }
 
-.ghost-button:hover, .ghost-button:active {
+.ghost-button:hover, .ghost-button:active, .brand-button:hover, .brand-button:active, .btn:hover, .btn:active {
   color:#fff;
   border: 1px solid $brand-color-soft;
   background:$brand-color-soft;
