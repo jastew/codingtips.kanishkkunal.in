@@ -109,7 +109,7 @@ For the mobile screens, I am going to hide the sidebar altogether and just stick
 We are now done with creating our fixed width sidebar in a responsive web design layout. You can view the demo as well as the full code on CodePen using one of the options below:
 
 <p class="text-center">
-<a href="http://codepen.io/kanishkkunal/full/MYKmbe/" class="ghost-button" target="_blank">Final Demo</a><a href="http://codepen.io/kanishkkunal/pen/MYKmbe" class="ghost-button" target="_balnk">Full Code</a>
+<a href="http://codepen.io/kanishkkunal/full/MYKmbe/" class="ghost-button" target="_blank">Final Demo</a> <a href="http://codepen.io/kanishkkunal/pen/MYKmbe" class="ghost-button" target="_balnk">Full Code</a>
 </p>
 
 Since, I am using this code on this blog, you see the sidebar of this site too as an example of the fixed width sidebar in responsive layout. Hope you found this Tutorial useful! Let me know if anything doesn't work for you.
