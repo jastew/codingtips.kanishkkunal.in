@@ -51,6 +51,7 @@ All you need to do is replace `http://example.com/sitemap.xml` with URL of your 
 I generally only ping my sitemaps to Google and Bing. Submitting your sitemap to Bing also gets you covered for search engines like Yahoo & [DuckDuckGo](https://duckduckgo.com/). Additionally you may want to ping your sitemap to Ask.com too via the URL below:
 
 ### Ping URL for Ask.com
+**Update**: Ask.com no longer support sitmap submission via the following URL and doesn't support pinging of sitemap anymore. It's advisable that you specify your sitemap in robots.txt as explained in the next section below.
 
 {% highlight html %}
  http://submissions.ask.com/ping?sitemap=http://example.com/sitemap.xml
