@@ -50,9 +50,9 @@ img {
 
 .image-wrapper {
     @extend %vertical-rhythm;
+    text-align: center;
 
     .image-caption {
-        text-align: center;
         color: $grey-color;
         margin-top: $spacing-unit / 3;
     }
