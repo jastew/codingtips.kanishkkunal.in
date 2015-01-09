@@ -2,9 +2,9 @@
  * Site header
  */
 .site-header {
-    background-color: #333333;
+    background-color: $nav-color;
     border-top: 5px solid $secondary-color;
-    min-height: 115px;
+    min-height: 110px;
 
     .wrapper {
         position: relative;
@@ -42,32 +42,6 @@
     @include media-query($on-palm) {
         text-align: center;
         margin: 0 auto;
-    }
-}
-
-#header-ad {
-    position: absolute;
-    height: 90px;
-    width: 728px;
-    top: 10px;
-    right: $spacing-unit;
-
-    @include media-query($on-laptop) {
-        height: 60px;
-        width: 468px;
-        top: 25px;
-        right: $spacing-unit / 2;
-    }
-
-    @include media-query($on-palm) {
-        height: 50px;
-        max-width: 100%;
-        position: relative;
-        display: block;
-        top: 0;
-        right: 0;
-        margin: $spacing-unit / 2 auto;
-        text-align: center;
     }
 }
 
@@ -243,13 +217,14 @@
 
 .searchform {
     display: block;
-    width: 100%;
-    margin-bottom: $spacing-unit;
+    width: 300px;
+    float: right;
+    margin-top: $spacing-unit;
 
     input {
         padding:6px 12px;
         border: none;
-        background-color: $grey-color-light;
+        background-color: $grey-color;
         border-radius: 5px;
         width: 100%;
     }
@@ -328,6 +303,7 @@
 /* Subscribe box */
 #subscribe-box {
     border:1px solid $grey-color-light;
+    background: $nav-color;
     padding: 20px;
     padding-top: 14px;
     text-align: center;
@@ -335,7 +311,7 @@
     font-size: 15px;
 
     p {
-        color: $grey-color;
+        color: $grey-color-light;
         margin-bottom: 8px;
     }
 
