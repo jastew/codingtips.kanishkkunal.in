@@ -1,8 +1,5 @@
 <div id="sponsers-list" class="embed">
-<a href="#" class="sponser-125"><img src="http://placehold.it/125x125" width="125" height="125"/></a>
-<a href="#" class="sponser-125"><img src="http://placehold.it/125x125" width="125" height="125"/></a>
-<a href="#" class="sponser-125"><img src="http://placehold.it/125x125" width="125" height="125"/></a>
-<a href="#" class="sponser-125"><img src="http://placehold.it/125x125" width="125" height="125"/></a>
-<a href="#" class="sponser-125"><img src="http://placehold.it/125x125" width="125" height="125"/></a>
-<a href="#" class="sponser-125"><img src="http://placehold.it/125x125" width="125" height="125"/></a>
+{% for sponser in site.data.sponsers limit:6 %}
+    <a class="sponser-125" href="{{ sponser.url }}" target="_blank" rel="nofollow"><img style="border:0px" src="{{ sponser.img }}" width="125" height="125" alt="{{ sponser.title }}"></a>
+{% endfor %}
 </div>
