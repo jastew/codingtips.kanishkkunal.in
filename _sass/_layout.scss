@@ -96,7 +96,6 @@
 
 #home-index {
     article {
-        margin-top: $spacing-unit  * 1.5;
         margin-bottom: $spacing-unit  * 1.5;
     }
 
@@ -225,7 +224,7 @@
         padding:6px 12px;
         border: none;
         background-color: $grey-color;
-        border-radius: 5px;
+        border-radius: 3px;
         width: 100%;
     }
 }
@@ -302,13 +301,12 @@
 
 /* Subscribe box */
 #subscribe-box {
-    border:1px solid $grey-color-light;
     background: $nav-color;
     padding: 20px;
     padding-top: 14px;
     text-align: center;
-    border-radius: 5px;
-    font-size: 15px;
+    border-radius: 3px;
+    font-size: 14px;
 
     p {
         color: $grey-color-light;
@@ -327,13 +325,13 @@
     input[type="text"] {
         background-color: $grey-color-light;
         color: $grey-color;
-        border-radius: 5px 0 0 5px;
+        border-radius: 3px 0 0 3px;
     }
 
     input[type="submit"] {
         background: $brand-color;
         color: $light-color;
-        border-radius: 0 5px 5px 0;
+        border-radius: 0 3px 3px 0;
         @include transition(background-color .3s ease);
     }
 
@@ -370,4 +368,23 @@
         padding-left: 10px;
     }
 
+}
+
+/* Sponsers in sidebar */
+#sponsers-list {
+    background-color: $light-color;
+
+    .sponser-125 {
+        margin: 12.5px;
+        padding: 0;
+        width: 125px;
+        height: 125px;
+
+        img {
+            margin: 12.5px 0;
+            padding: 0;
+            width: 125px;
+            height: 125px;
+        }
+    }
 }
