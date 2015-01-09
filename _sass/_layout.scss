@@ -5,6 +5,7 @@
     background-color: $nav-color;
     border-top: 5px solid $secondary-color;
     min-height: 110px;
+    position: relative;
 
     .wrapper {
         position: relative;
@@ -217,8 +218,17 @@
 .searchbar {
     display: block;
     width: 300px;
-    float: right;
-    margin-top: $spacing-unit;
+    position: absolute;
+    top: 1.5 *  $spacing-unit;
+    right:  $spacing-unit;
+
+    @include media-query($on-palm) {
+            position: relative;
+            top: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: $spacing-unit / 3 0;
+        }
 
     form {
         position: relative;

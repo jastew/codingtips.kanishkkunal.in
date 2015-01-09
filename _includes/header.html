@@ -4,16 +4,15 @@
     <div id="header-brand">
         <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
-        <div class="searchbar">
-            <form role="search" method="get" action="/search/">
-                <input type="text" name="s" placeholder="Search E.g. Responsive Design">
-                <span class="icon">{% include svg-icons/search.html %}</span>
-            </form>
-        </div>
-
         <div class="social-icons">
             {% include social-links.html %}
         </div>
+    </div>
+    <div class="searchbar">
+        <form role="search" method="get" action="/search/">
+            <input type="text" name="s" placeholder="Search E.g. Responsive Design">
+            <span class="icon">{% include svg-icons/search.html %}</span>
+        </form>
     </div>
   </div>
 
