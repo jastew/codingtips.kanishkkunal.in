@@ -189,6 +189,13 @@
     font-size: $small-font-size;
     color: $grey-color;
     @extend %vertical-rhythm;
+
+    @include media-query($on-palm) {
+        .author-line {
+            display: block;
+            margin-top: $spacing-unit / 3;
+        }
+    }
 }
 
 .post-link {
@@ -217,6 +224,11 @@
     .post-link {
         font-size: 1.2 * $base-font-size;
     }
+}
+
+.post-ad {
+    text-align: center;
+    margin: 0 auto $spacing-unit;
 }
 
 .rss-subscribe {
@@ -349,11 +361,13 @@
 }
 
 .meta-tag a {
+    display: inline-block;
     background-color: $grey-color-dark;
     color: $light-color;
     padding: 5px 12px;
     border-radius: 3px;
     margin-left: 6px;
+    margin-bottom: 6px;
     text-transform: uppercase;
     @include transition(background-color .3s ease);
 

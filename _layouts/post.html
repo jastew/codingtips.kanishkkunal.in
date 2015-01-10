@@ -15,7 +15,7 @@ layout: default-sidebar
             {% else %}
                 <time class="date published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
             {% endif %}
-            by <span itemprop="author">{{ site.name }}</span>
+            <span class="author-line">by <span itemprop="author">{{ site.name }}</span></span>
         </div>
       </header>
       <div class="entry-content">
@@ -23,7 +23,7 @@ layout: default-sidebar
       </div>
     </article>
 
-    <div class="embed text-center">
+    <div class="post-ad">
     {% include post-bottom-ad.html %}
     </div>
 
