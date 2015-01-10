@@ -149,14 +149,21 @@
     }
 }
 
-.post-topic {
-    text-transform: uppercase;
-    margin-top: $spacing-unit / 2;
-    margin-bottom: $spacing-unit / 3;
+#home-topics {
+    h3.post-topic {
+        text-transform: uppercase;
+        margin-bottom: $spacing-unit / 3;
+        font-size: $base-font-size;
+        color: $text-color;
+        display: block;
+    }
 
-    color: $text-color;
-    display:inline-block;
+    h3.site-tag {
+        display: inline-block;
+        margin-right: 12px;
+    }
 }
+
 
 .post-meta {
     font-size: $small-font-size;
@@ -346,14 +353,6 @@
 
     &:hover {
         background-color: $secondary-color-soft;
-    }
-}
-
-.home-page-heading {
-    padding-top: 6px;
-
-    .ghost-button-group {
-        margin-left: 12px;
     }
 }
 
