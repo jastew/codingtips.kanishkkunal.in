@@ -3,6 +3,7 @@ layout: post
 title: Ghost Buttons on background image
 categories: html-css
 tags: [css-buttons, flat-web-design, ghost-buttons]
+featured: /wp-content/uploads/sites/11/2014/11/ghost-buttons-background-image.jpg
 ---
 This is my second post in **Ghost Buttons** series. In the last one I showed how to create a simple [Ghost Button CSS]({% post_url 2014-11-09-super-simple-ghost-button-css %}) style for turning Links into Ghost Buttons. In this post we will see a better example where we will be placing the Ghost Buttons over large background images and giving it a [soft color transition effect]({% post_url 2014-11-15-color-animation-link-hover-css %}).
 

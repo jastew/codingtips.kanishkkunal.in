@@ -3,6 +3,7 @@ layout: post
 title: Coding Tips now running on GitHub Pages powered by Jekyll
 categories: developer-tools
 tags: jekyll
+featured: /images/octojekyll-opt.jpg
 ---
 
 I have moved hosting of my Coding Tips blog to [GitHub Pages]. At the core, [Jekyll] is being used to generate static HTML pages for this site which is getting hosted by GitHub.

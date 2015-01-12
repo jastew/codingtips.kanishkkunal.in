@@ -3,6 +3,7 @@ layout: post
 title: Firefox launches Developer Edition Browser for Web Developers
 description: Firefox, on its 10th anniversary, announced a Developer Edition Browser, and it has become an instant favorite of mine for web development work and also for everyday browsing.
 categories: developer-tools
+featured: /wp-content/uploads/sites/11/2014/11/firefox-developer-edition.png
 ---
 
 {% include image.html img="wp-content/uploads/sites/11/2014/11/firefox-developer-edition-browser-screenshot.jpg" title="Firefox Developer edition browser screenshot" url="https://www.mozilla.org/en-US/firefox/developer/" %}

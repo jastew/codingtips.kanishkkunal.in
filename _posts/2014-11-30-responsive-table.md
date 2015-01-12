@@ -5,6 +5,7 @@ date: 2014-11-30 11:28
 modified: 2014-12-09 11:28
 categories: html-css
 tags: responsive-web-design
+featured: /wp-content/uploads/sites/11/2014/11/responsive-table-zebra-stripe.png
 ---
 In this post I will be sharing CSS code snippet for making a simple **responsive table** with alternate color rows (**zebra stripes**). I made use of these when making leader-board tables for our <a href="http://games.kunruchcreations.com/" target="_blank">HTML5 games</a>. For e.g. take a look at <a href="http://games.kunruchcreations.com/spooky_planet/leaderboard" target="_blank">Spooky Planet's leaderboard</a> table which is responsive and has alternate color rows.
 

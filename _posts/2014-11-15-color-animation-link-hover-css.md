@@ -3,6 +3,7 @@ layout: post
 title: Soft color animation on Link Hover with CSS
 categories: html-css
 tags: flat-web-design
+featured: /wp-content/uploads/sites/11/2014/11/color-animation-link-hover.gif
 ---
 Many a times, you would come across sites, where on hovering a Link you will find soft color animation happening to change the link color. Upon link hover the color of link will fade into another color over short duration instead of changing immediately. This kind of soft animation is much more soothing than having an instant color switch, which looks abrupt to the eye.
 

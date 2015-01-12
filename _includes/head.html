@@ -34,7 +34,11 @@
 
     {% if page.featured %}
         <meta property="og:image" content="{{ site.url }}{{ page.featured }}"/>
+    {% else %}
+        <meta property="og:image" content="{{ site.url }}/images/codingtips.png"/>
     {% endif %}
+
+    <meta property="fb:admins" content="541341105"/>
 
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

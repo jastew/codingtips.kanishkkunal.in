@@ -4,6 +4,7 @@ title: Super simple Ghost Button CSS
 categories: html-css
 tags: [css-buttons, flat-web-design, ghost-buttons]
 modified: 2014-12-12
+featured: /wp-content/uploads/sites/11/2014/11/simple-ghost-button-css.png
 ---
 
 In this tutorial, I will show you how to create a very simple &amp; minimal Ghost Button with CSS. Ghost Buttons are quite popular these days and are trending design element while doing minimal &amp; Flat Web design.

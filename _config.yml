@@ -28,7 +28,7 @@ ads3: yes
 addthis: yes
 
 # paging settings
-paginate: 8
+paginate: 10
 
 # Build settings
 markdown: kramdown

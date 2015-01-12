@@ -3,6 +3,7 @@ layout: post
 title: Drawing draggable shapes on Canvas with CreateJS
 categories: javascript
 tags: [canvas, createjs]
+featured: /wp-content/uploads/sites/11/2014/11/draggable-shapes-canvas.png
 ---
 While working for a cross platform hybrid app, I had the requirement of drawing draggable shapes on Canvas. I came across many JavaScript Canvas Libraries such as <strong><a href="http://calebevans.me/projects/jcanvas/" target="_blank">jCanvas</a>,</strong> which suited the purpose. However, I finally settled down for <strong><a href="http://www.createjs.com/#!/CreateJS" target="_blank">CreateJS</a>.</strong>
 

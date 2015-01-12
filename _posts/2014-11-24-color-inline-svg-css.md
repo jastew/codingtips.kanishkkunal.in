@@ -4,6 +4,7 @@ title: Change color of inline SVG with CSS
 description: While working on optimizing my websites for speed I decided to make use of inline SVG images instead of font icons such as Font Awesome.
 categories: html-css
 tags: [font-icon, svg]
+featured: /wp-content/uploads/sites/11/2014/11/inline-svg-color.png
 ---
 
 {% include image.html img="wp-content/uploads/sites/11/2014/11/inline-svg-color.png" title="inline svg color"%}

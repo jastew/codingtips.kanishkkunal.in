@@ -4,6 +4,7 @@ title: Fixed width sidebar in responsive design
 categories: html-css
 date: 2014-12-10 21:39
 tags: responsive-web-design
+featured: /images/fixed-width-sidebar-layout.png
 ---
 
 When I was redesigning this site, I wanted to put a **fixed width sidebar** to place ads. But since I was working on to make a **responsive design** for the site, a sidebar based on grid layouts which are based on percent-width wouldn't have solved my purpose. In this post, I will share the CSS which I used to create a fixed width sidebar for this site, while keeping the entire site layout responsive and suitable for mobile views.
