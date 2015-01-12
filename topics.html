@@ -14,7 +14,7 @@ description: Coding Tips article topics - HTML-CSS, JavaScript, Canvas, Flat Web
             {% for category in cats %}
              <h3 class="post-topic"><a href="/category/{{ category[0] | slugify }}/">
                 {{ category[0] | replace:'-', ' ' }}
-            </a></span>
+            </a></h3>
             {% endfor %}
         </div>
 
@@ -24,7 +24,7 @@ description: Coding Tips article topics - HTML-CSS, JavaScript, Canvas, Flat Web
             {% for tag in tags %}
              <h3 class="post-topic site-tag"><a href="/tag/{{ tag[0] | slugify }}/" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
                 {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-            </a></span>
+            </a></h3>
             {% endfor %}
         </div>
     </div>
